@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>SuperHero Hunter</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="character()">
+
+<!-- home button -->
+  <button ><a class="home" href="index.html">HOME</a></button>
+    
+
+  <!-- button for favourite list -->
+                <a class="nav-link" href="Favourites.html"> <button class="nav-item"><i class="fa-solid fa-rectangle-list"></i>Favourites</button></a>
+              
+
+      <form id="connectionForm">
+
+          <div class="search">
+
+            <!-- name of project on screen -->
+          <h1 class="animate__animated animate__none animate__infinite animate__slower">Super Hero Hunter</h1>
+          
+          <!-- search bar -->
+          <input type="text" name="name" id="name" class="form-control character-search-box"
+            placeholder="Search your super hero name " onkeyup="showCorrespondingHeros()">
+        
+      </form>
+
+      <!-- section for searching result -->
+      <div class = "unlist" id="cardsgroup"></div>
+  
+<!-- javascript link -->
+  <script src="script.js"></script>
+  </body>
+
+</html>
